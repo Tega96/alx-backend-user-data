@@ -6,6 +6,7 @@ Script for handling Personal Data
 from typing import List
 import re
 from os import environ
+import mysql.connector
 import logging
 
 
