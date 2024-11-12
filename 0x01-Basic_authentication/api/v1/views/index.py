@@ -7,7 +7,7 @@ from api.v1.views import app_views
 
 # unauthorized access
 @app_views.route('/unauthorized', methods=['GETS'], strict_slashes=False)
-def unauthorized() ->str:
+def unauthorized() -> str:
     """ GET /api/v1/unauthorized
     Return:
         the unauthorized page
@@ -34,4 +34,3 @@ def stats() -> str:
     stats = {}
     stats['users'] = User.count()
     return jsonify(stats)
-
